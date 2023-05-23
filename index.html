@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pepsi</title>
+</head>
+<body>
+    <section class="sec">
+    <header>
+        <img src="img/logo.png" alt="" class="logo">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>That's what<br><span>I LIKE</span></h2>
+            <p>pesan yang ingin kamu smpaikan</p>
+            <a href="">VIEW PRODUCTS</a>
+        </div>
+        <div class="imgBox">
+            <img src="img/pepsi01.png" alt="" class="pepsi">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="img/pepsi01.png" onclick="imgSlider('img/pepsi01.png');changeBgColor('#0062be')"></li>
+        <li><img src="img/pepsi02.png" onclick="imgSlider('img/pepsi02.png');changeBgColor('#e60c2c')"></li>
+        <li><img src="img/pepsi03.png" onclick="imgSlider('img/pepsi03.png');changeBgColor('#1e1e1e')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+        <li><a href=""><img src="" alt=""></a></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec')
+            sec.style.background = color
+        }
+    </script>
+</body>
+</html>
